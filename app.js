@@ -42,7 +42,10 @@ app.use('/users', users);
 
 //Connect to mongodb
 
-mongoose.connect('mongodb://localhost/hellousers', function(err){
+//mongoose.connect('mongodb://localhost/hellousers', function(err){
+  
+mongoose.connect('mongodb://calibertree:calibertree@52.39.209.42:27017/hellousers', function(err){
+
   if(err){
     return console.log(err);
   }
